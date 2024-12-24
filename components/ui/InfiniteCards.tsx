@@ -1,9 +1,7 @@
-"use client";
-
-import { cn } from "@/lib/utils";
 import React, { useEffect, useState, useCallback } from "react";
 import { getTestimonials } from "@/sanity/sanity-utils";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 export const InfiniteMovingCards = ({
   direction = "left",
@@ -41,7 +39,7 @@ export const InfiniteMovingCards = ({
   const [start, setStart] = useState(false);
   
   const addAnimation = useCallback(() => {
-    if (containerRef.current && scrollerRef.current) {
+    if (typeof window !== "undefined" && containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
       scrollerContent.forEach((item) => {
