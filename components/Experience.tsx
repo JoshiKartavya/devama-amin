@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "./ui/MovingBorders";
 import { getWorkExperience } from "@/sanity/sanity-utils";
-import 'remixicon/fonts/remixicon.css'
 
 const Experience = () => {
   const [workExperience, setWorkExperience] = useState<
@@ -91,7 +90,7 @@ const Experience = () => {
               onClick={closeModal}
               className="absolute top-2 md:top-3 right-2 md:right-3 text-black text-lg font-bold"
             >
-              <i className="ri-close-circle-fill text-3xl md:text-4xl text-[#d9d9d9]"></i>
+              ✕
             </button>
             <div className="flex flex-col items-start mt-6 md:mt-8 justify-start relative w-full h-full gap-2 md:gap-4">
               <div className="img relative w-full h-[85%] md:h-[90%] rounded-lg">
