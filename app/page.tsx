@@ -9,7 +9,6 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Experience from "@/components/Experience";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import 'remixicon/fonts/remixicon.css'
 
 const Home = () => {
   return (

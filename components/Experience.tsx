@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "./ui/MovingBorders";
 import { getWorkExperience } from "@/sanity/sanity-utils";
+import 'remixicon/fonts/remixicon.css'
 
 const Experience = () => {
   const [workExperience, setWorkExperience] = useState<
