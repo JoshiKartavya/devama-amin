@@ -124,7 +124,7 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <span className="relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
-                "{item.quote}"
+                &ldquo;{item.quote}&rdquo;
               </span>
               <div className="profile relative z-20 flex flex-row items-center w-full">
                 <div className="me-3">
